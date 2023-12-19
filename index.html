@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Snake</h1>
+    <div class="setting">
+        <label for="level">Select Level</label>
+        <select id="level">
+            <option value="15">noob</option>
+            <option value="7" selected>normal</option>
+            <option value="3">pro</option>
+        </select>
+        <label for="size">Select Size</label>
+        <select id="size">
+            <option value="10">large</option>
+            <option value="20" selected>mediam</option>
+            <option value="25">small</option>
+        </select>
+        <div>Score:<span id="score"></span></div>
+        <div>High Score:<span id="highScore"></span></div>
+        <button id="restart" onclick="restart()">Restart</button>
+    </div>
+    <div id="cover">Click</div>
+    <canvas id="board"></canvas>
+    <script src="main.js"></script> 
+</body>
+</html>
